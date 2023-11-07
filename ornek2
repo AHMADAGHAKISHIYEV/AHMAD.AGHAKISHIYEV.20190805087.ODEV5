@@ -1,0 +1,27 @@
+public class ornek2 {
+    // Metin içindeki büyük harf ve küçük harf değişimini gerçekleştiren metot
+    public static String changeCase(String text) {
+        char[] characters = text.toCharArray(); // Metni karakter dizisine dönüştür
+
+        for (int i = 0; i < characters.length; i++) {
+            char currentChar = characters[i];
+
+            if (Character.isUpperCase(currentChar)) { // Karakter büyük harfse
+                characters[i] = Character.toLowerCase(currentChar); // Küçük harfe çevir
+            } else if (Character.isLowerCase(currentChar)) { // Karakter küçük harfse
+                characters[i] = Character.toUpperCase(currentChar); // Büyük harfe çevir
+            }
+            // Diğer karakterler (noktalama işaretleri, rakamlar vb.) değiştirilmez
+        }
+
+        return new String(characters); // Dönüştürülmüş metni geri döndür
+    }
+    public static void main(String[] args) {
+        String originalText = "Merhaba Dunya"; // Dönüştürmek istediğiniz metin
+        String convertedText = changeCase(originalText); // Metni dönüştür
+
+        System.out.println("Orijinal Metin: " + originalText);
+        System.out.println("Dönüştürülmüş Metin: " + convertedText);
+    }
+
+}
