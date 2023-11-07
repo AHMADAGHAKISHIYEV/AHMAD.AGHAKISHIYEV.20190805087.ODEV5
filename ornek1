@@ -1,0 +1,40 @@
+/* ornek1.1
+ UML (Unified Modeling Language), bilgi modelleme ve yazılım tasarımı için kullanılan bir dil ve görsel araçtır. Temel işlevleri şunlardır:
+
+İletişim: Farklı insanlar arasında karmaşık konuları daha kolay anlamalarını ve paylaşmalarını sağlar. Görsel diyagramlar,
+düşünceleri ve bilgileri net bir şekilde iletebilir.
+Analiz ve Tasarım: UML, bir yazılım veya sistemin nasıl çalıştığını anlamamıza ve nasıl yapılacağını planlamamıza yardımcı olur.
+Bu, daha iyi tasarlanmış ve daha güvenilir sistemlerin oluşturulmasına yardımcı olur.
+Modülerlik: UML, bir sistem veya yazılımı parçalara bölmeyi ve bu parçaların nasıl bir arada çalıştığını göstermeyi sağlar. 
+Bu, daha büyük projelerin daha iyi yönetilmesine yardımcı olur.
+Belgelendirme: Proje dokümantasyonu oluşturmak için kullanılabilir. Projelerin daha iyi anlaşılmasına ve bakımına yardımcı olur.
+Kod Üretimi: Bazı UML araçları, tasarımlardan kod üretme yeteneği sunar, bu da yazılım geliştiricilerin daha hızlı kod yazmalarına yardımcı olabilir.
+Değişiklik Yönetimi: UML, değişikliklerin projeye nasıl etki edeceğini tahmin etmeye yardımcı olur ve kontrolsüz değişiklikleri engeller.
+Test ve Doğrulama: UML modelleri, test senaryolarını ve doğrulama süreçlerini tasarlama ve planlama için kullanılabilir. 
+Bu, yazılımın daha iyi test edilmesine yardımcı olur.
+UML, bu işlevleri gerçekleştirmek için farklı türde görsel diyagramlar sunar. Bu diyagramlar, projelerin daha iyi anlaşılmasına ve yönetilmesine yardımcı olur.
+ */
+ornek1-2
+ArrayList:
+
+ArrayList, sıralı bir liste gibidir. Elemanlar ardışık bir şekilde saklanır ve indis numaraları ile erişilir.
+Elemanlara hızlı erişim sağlar, ancak listenin sonuna eleman eklemek hızlıdır. Ortasına veya başına ekleme yavaş olabilir.
+Kullanım amacı: Elemanlara sıkça erişilmesi ve ekleme/çıkarma işlemleri az olduğu zaman kullanılır.
+
+LinkedList:
+LinkedList, elemanlar arasında bağlantıları olan bir liste gibidir. Elemanlar bağlıdır ve belirli bir
+elemana erişmek için listenin başından itibaren dolaşılması gerekebilir.
+Eleman ekleme ve çıkarma işlemleri hızlıdır, ancak erişim işlemleri yavaş olabilir.
+Kullanım amacı: Elemanların sıkça eklenip çıkarıldığı, sıralı erişim gereksiniminin düşük olduğu durumlar için uygundur.
+
+HashMap:
+HashMap, anahtar-değer çiftlerini saklar. Her anahtar yalnızca bir değere karşılık gelir ve anahtarlar benzersiz olmalıdır.
+Anahtarlarla hızlı erişim sağlar ve her anahtarla bir değere ulaşmak kolaydır.
+Kullanım amacı: Anahtarlarla hızlı veri erişimi gerektiğinde ve anahtarların benzersiz olduğu durumlarda kullanılır. Özellikle veri tabanları, önbellekler ve benzersiz veri saklama gereksinimleri için kullanılır.
+
+HashSet:
+HashSet, benzersiz elemanları saklar ve sıralama garantisi vermez.
+Eleman ekleme, silme ve varlık kontrolü işlemleri hızlıdır.
+Kullanım amacı: Benzersiz elemanlar gerektiğinde ve sıralama önemli olmadığında kullanılır. Genellikle yinelenen elemanların engellenmesi veya hızlı veri kontrolü gerektiğinde kullanılır.
+
+ */
