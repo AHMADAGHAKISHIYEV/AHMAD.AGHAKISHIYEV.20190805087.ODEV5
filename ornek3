@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Squeeze {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("1.Metni girin ");
+        String metin1= scanner.nextLine();
+        System.out.println("2.Metni girin ");
+        String metin2= scanner.nextLine();
+        String squeezmetin=squeeze(metin1,metin2);
+        System.out.println("Son Metin " + squeezmetin);
+        scanner.close();
+    }
+    public static String squeeze(String metin1,String metin2){
+        StringBuilder sonmetin=new StringBuilder();//String sınıfının aksine, StringBuilder
+        // nesnesi oluşturulduktan sonra metni değiştirmenize izin verir.
+        for(int i=0;i<metin1.length();i++){
+            char metin=metin1.charAt(i);//charAt metodu, belirli bir indekste bulunan karakteri almak için kullanışlıdır
+            // ve metin üzerinde indeksleme işlemleri yaparken kullanılır.
+            if(metin2.indexOf(metin)== -1 ){//indexOf metodu metin işleme, metinde belirli bir kelimenin veya karakter
+                // dizisinin nerede bulunduğunu bulma ve bu bilgiye dayalı işlemler yapma gibi durumlarda kullanışlıdır.
+                sonmetin.append(metin);//append metodu, metin oluştururken veya metinde değişiklik yaparken çok kullanışlıdır.
+                // Özellikle büyük metinleri birleştirirken veya metni adım adım oluştururken kullanılabilir.
+                //Bu metot, mevcut metine yeni metin veya karakterler eklemek için kullanılır.
+            }
+        }
+        return sonmetin.toString();
+    }
+}
