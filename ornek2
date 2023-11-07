@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class ChangeCase {
+    public static void main(String[] args) {
+        //Oncelikle kullanicidan metin girmesini istiyoruz ve bunun icin Scanner metodunu kullaniyoruz
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Metni giriniz ");
+        String ilkmetin=scanner.nextLine();
+        String ikincimetin=changecase(ilkmetin);
+        System.out.println("Ikinci metin " + ikincimetin);
+        scanner.close();
+    }
+
+    public static String changecase(String text) {
+        char[] metin = text.toCharArray();// char onune [] koymamizin nedeni bir karakter degil dizi kullanmamiz
+        for (int i = 0; i < metin.length; i++) {// i indeksiyle dizi icerisindeki tum harfleri tek tek kontrol edecegiz
+            char ikincimetin = metin[i];
+            if (Character.isUpperCase(ikincimetin)) {
+                metin[i] = Character.toLowerCase(ikincimetin);
+            } else if (Character.isLowerCase(ikincimetin)) {
+                metin[i] = Character.toUpperCase(ikincimetin);
+            }
+        }
+        return new String(metin);
+    }
+}
+
